@@ -39,101 +39,110 @@
     </nav>
     </header>
 
-    <main>
-        <div class="container">
-    <h1>Порівняння операційних систем</h1>
+    <main class="page-grid">
+        
+        <div class="span-12">
+            <h1>Порівняння операційних систем</h1>
+        </div>
 
-    <table>
-        <caption>Порівняння п'яти операційних систем</caption>
-        <thead>
-            <tr>
-                <th scope="col">Назва ОС</th>
-                <th scope="col">Рік появи ОС</th>
-                <th scope="col">Розробник / Основа</th>
-                <th scope="col">Відкритий код</th>
-                <th scope="col">Основне застосування</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">UNIX</th>
-                <td><time datetime="1969">1969</time></td>
-                <td>Bell Labs</td>
-                <td>ні</td>
-                <td>сервери, мейнфрейми</td>
-            </tr>
-            <tr>
-                <th scope="row">MS-DOS</th>
-                <td><time datetime="1981">1981</time></td>
-                <td>Microsoft</td>
-                <td>ні</td>
-                <td>персональні комп'ютери</td>
-            </tr>
-            <tr>
-                <th scope="row">Linux</th>
-                <td><time datetime="1991">1991</time></td>
-                <td>Лінус Торвальдс</td>
-                <td>так</td>
-                <td>сервери, суперкомп'ютери</td>
-            </tr>
-            <tr>
-                <th scope="row">Windows</th>
-                <td><time datetime="1985">1985</time></td>
-                <td>Microsoft</td>
-                <td>ні</td>
-                <td>десктопні ПК, офіс</td>
-            </tr>
-            <tr>
-                <th scope="row">Android</th>
-                <td><time datetime="2008">2008</time></td>
-                <td>Google (ядро Linux)</td>
-                <td>так</td>
-                <td>мобільні пристрої</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="5">Загалом розглянуто: 5 ключових операційних систем</td>
-            </tr>
-        </tfoot>
-    </table>
+        <div class="span-12">
+            <table>
+                <caption>Порівняння п'яти операційних систем</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Назва ОС</th>
+                        <th scope="col">Рік появи ОС</th>
+                        <th scope="col">Розробник / Основа</th>
+                        <th scope="col">Відкритий код</th>
+                        <th scope="col">Основне застосування</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">UNIX</th>
+                        <td><time datetime="1969">1969</time></td>
+                        <td>Bell Labs</td>
+                        <td>ні</td>
+                        <td>сервери, мейнфрейми</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">MS-DOS</th>
+                        <td><time datetime="1981">1981</time></td>
+                        <td>Microsoft</td>
+                        <td>ні</td>
+                        <td>персональні комп'ютери</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Linux</th>
+                        <td><time datetime="1991">1991</time></td>
+                        <td>Лінус Торвальдс</td>
+                        <td>так</td>
+                        <td>сервери, суперкомп'ютери</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Windows</th>
+                        <td><time datetime="1985">1985</time></td>
+                        <td>Microsoft</td>
+                        <td>ні</td>
+                        <td>десктопні ПК, офіс</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Android</th>
+                        <td><time datetime="2008">2008</time></td>
+                        <td>Google (ядро Linux)</td>
+                        <td>так</td>
+                        <td>мобільні пристрої</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Загалом розглянуто: 5 ключових операційних систем</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
 
-    <h2>Мінімальні системні вимоги ОС</h2>
-    <table>
-        <caption>Вимоги операційних систем до апаратних ресурсів</caption>
-        <thead>
-            <tr>
-                <th rowspan="2" scope="col">Назва ОС</th>
-                <th colspan="2" scope="colgroup">Системні вимоги</th>
-            </tr>
-            <tr>
-                <th scope="col">Процесор (CPU)</th>
-                <th scope="col">Пам'ять (RAM)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Windows 11</th>
-                <td>2 ядра (1 ГГц)</td>
-                <td>4 ГБ</td>
-            </tr>
-            <tr>
-                <th scope="row">Ubuntu Server</th>
-                <td>1 ядро (1 ГГц)</td>
-                <td>1 ГБ</td>
-            </tr>
-            <tr>
-                <th scope="row">Alpine Linux</th>
-                <td>1 ядро (100 МГц)</td>
-                <td>128 МБ</td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
-     <div class="media">
-    <span class="media__icon" aria-hidden="true">ⓘ</span>
-    <p class="media__body">>Підказка: порівняйте накладні витрати ресурсів (CPU та RAM) перед вибором типу віртуалізації.</p>
-    </div>
+        <div class="span-8">
+            <h2>Мінімальні системні вимоги ОС</h2>
+            <table>
+                <caption>Вимоги операційних систем до апаратних ресурсів</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Назва ОС</th>
+                        <th colspan="2" scope="colgroup">Системні вимоги</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Процесор (CPU)</th>
+                        <th scope="col">Пам'ять (RAM)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Windows 11</th>
+                        <td>2 ядра (1 ГГц)</td>
+                        <td>4 ГБ</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ubuntu Server</th>
+                        <td>1 ядро (1 ГГц)</td>
+                        <td>1 ГБ</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Alpine Linux</th>
+                        <td>1 ядро (100 МГц)</td>
+                        <td>128 МБ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <aside class="span-4">
+            <div class="media card">
+                <span class="media__icon" aria-hidden="true">ⓘ</span>
+                <p class="media__body">Підказка: порівняйте накладні витрати ресурсів (CPU та RAM) перед вибором типу віртуалізації.</p>
+            </div>
+        </aside>
+
     </main>
     <footer>
         <address>

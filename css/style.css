@@ -708,3 +708,24 @@ button:focus-visible,
     padding: 10px 24px;              /* Внутрішні відступи для естетичного вигляду */
     margin-right: 10px;              
 }
+
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);   /* Рівно 12 колонок */
+    gap: var(--space-lg);                       /* Жолоби (відступи) між колонками */
+    max-width: 1100px;                          /* Максимальна ширина контейнера */
+    margin-inline: auto;                        /* Центрування сторінки */
+    padding-inline: var(--space-md);            /* Бічні поля (padding зліва і справа) */
+}
+
+.span-12 { 
+    grid-column: span 12;   /* Займає всю ширину (12 колонок із 12) — для шапки, героїв, футера */
+}
+
+.span-8  { 
+    grid-column: span 8;    /* Займає 8 колонок із 12 — зазвичай для основного контенту */
+}
+
+.span-4  { 
+    grid-column: span 4;    /* Займає 4 колонки із 12 — зазвичай для сайдбару, панелей, карток */
+}
