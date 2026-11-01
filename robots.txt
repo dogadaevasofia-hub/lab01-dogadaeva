@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+ 
+Sitemap: https://dogadaevasofia-hub.github.io/lab01-dogadaeva/sitemap.xml
