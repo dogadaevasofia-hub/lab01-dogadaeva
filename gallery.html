@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Операційні системи та віртуалізація</title>
+    <meta name="description" content="Галерея ілюстрацій та схем">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="site-title">Операційні системи та віртуалізація — огляд напряму</a>
+        <nav>
+            <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Таблиці</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li class="menu__contacts"><a href="contacts.html">Контакти</a></li>
+            <li><a href="application.html">Заявка на участь</a></li>
+    </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+    <h2>Векторна графіка</h2>
+    <img src="img/icon.svg" alt="Піктограма коду" width="64" height="64">
+    
+    
+    <section class="card-grid">
+        <!-- Картка 1 -->
+        <figure class="card gallery-card">
+            <picture>
+                <source srcset="img/datastructure2.webp" type="image/webp">
+                <img src="img/datastructure1.jpg" alt="Дерев'яні кубики з написом DATA" width="1200" height="800">
+            </picture>
+            <figcaption>
+                <p>Концепція даних у програмуванні</p>
+                <p><small>Автор: Маркус Вінклер | Ліцензія: Unsplash License</small></p>
+            </figcaption>
+        </figure>
+        
+        <!-- Картка 2 -->
+        <figure class="card gallery-card">
+            <picture>
+                <source srcset="img/code2.webp" type="image/webp">
+                <img src="img/code1.jpg" alt="Робоче місце з відкритим кодом на екрані монітора" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>
+                <p>Написання коду алгоритмів</p>
+                <p><small>Автор: Ілля Павлов | Ліцензія: Unsplash License</small></p>
+            </figcaption>
+        </figure>
+
+        <!-- Картка 3 -->
+        <figure class="card gallery-card">
+            <picture>
+                <source srcset="img/keyboard2.webp" type="image/webp">
+                <img src="img/keyboard1.jpg" alt="Комп'ютерна клавіатура з підсвічуванням зблизька" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>
+                <p>Введення даних та взаємодія</p>
+                <p><small>Автор: Катаріна Глот | Ліцензія: Unsplash License</small></p>
+            </figcaption>
+        </figure>
+
+        <!-- Картка 4 -->
+        <figure class="card gallery-card">
+            <picture>
+                <source srcset="img/network2.webp" type="image/webp">
+                <img src="img/network1.jpg" alt="" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>
+                <p>Абстрактна фонова графіка (декоративна)</p>
+                <p><small>Автор: Конні Шнайдер | Ліцензія: Unsplash License</small></p>
+            </figcaption>
+        </figure>
+
+        <!-- Картка 5 -->
+        <figure class="card gallery-card">
+            <picture>
+                <source srcset="img/server2.webp" type="image/webp">
+                <img src="img/server1.jpg" alt="Схема структури серверного обладнання" width="1200" height="800" loading="lazy">
+            </picture>
+            <figcaption>
+                <p>Серверне обладнання для збереження даних.</p>
+                <p><small>Схема показує розташування серверних стійок, комутаторів та систем охолодження у дата-центрі.</small></p>
+                <p><small>Автор: Scott Rodgerson | Ліцензія: Unsplash License</small></p>
+            </figcaption>
+        </figure>
+
+        <!-- Картка 6 (Картка-посилання) -->
+        <figure class="card gallery-card">
+            <a href="pages/resources.html">
+                <picture>
+                    <source srcset="img/resources.png" type="image/png">
+                    <img src="img/resources.png" alt="Перейти до розділу «Ресурси»" width="1200" height="800" loading="lazy">
+                </picture>
+            </a>
+            <figcaption>
+                <p>Корисні матеріали та джерела (натисніть на фото для переходу)</p>
+            </figcaption>
+        </figure>
+    </section>
+
+
+<div class="container">
+        <!-- Секція з відео у картці -->
+        <h2>Демонстрація проєкту</h2>
+        <section class="card-grid center-grid">
+            <article class="card media-card">
+                <video controls width="100%">
+                    <source src="video/demo.mp4" type="video/mp4">
+                    <track src="video/demo-uk.vtt" kind="subtitles" srclang="uk" label="Українська" default>
+                    Ваш браузер не підтримує відтворення відео.
+                </video>
+                <div class="card-caption">
+                    <p>Відеопрезентація лабораторної роботи</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Секція з мапою у картці -->
+        <h2>Розташування</h2>
+        <section class="card-grid center-grid">
+            <article class="card media-card">
+                <div class="map-container">
+                    <iframe src="https://www.openstreetmap.org/export/embed?bbox=30.746376514434818%2C46.440958455457704%2C30.748887062072757%2C46.442141364059324&amp;layer=mapnik"
+                    width="100%" height="400"
+                    title="Карта розташування закладу освіти"
+                    loading="lazy"
+                    sandbox="allow-scripts allow-same-origin"></iframe>
+                </div>
+                <div class="card-caption">
+                    <p>Карта розташування закладу освіти</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Галерея карток із тестами flex-grow / flex-shrink -->
+        <h2>Галерея робіт</h2>
+        <section class="card-grid">
+            <article class="card test-grow-1">Картка 1 (grow: 1)</article>
+            <article class="card test-noshrink">Ця картка не стискається</article>
+            <article class="card test-grow-3">Картка 3 (grow: 3)</article>
+            <article class="card">Картка 4</article>
+            <article class="card">Картка 5</article>
+        </section>
+    </div>
+
+    </main>
+
+    <br>
+
+    <footer>
+        <address>
+            Догадаєва Софія, група КН 21<br>
+            <a href="mailto:contact@brandname.com">contact@brandname.com</a><br>
+            <a href="tel:+380674821953">++380674821953</a>
+        </address>
+        <p>&copy; 2026 Догадаєва Софія</p>
+    </footer>
+
+    <a href="#top" class="back-to-top">Нагору</a>
+
+</body>
+</html>
