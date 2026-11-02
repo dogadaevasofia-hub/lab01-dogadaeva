@@ -729,3 +729,10 @@ button:focus-visible,
 .span-4  { 
     grid-column: span 4;    /* Займає 4 колонки із 12 — зазвичай для сайдбару, панелей, карток */
 }
+
+.content-card {
+    background-color: #1e2530; /* Світліший темний відтінок фону картки */
+    border-radius: 12px;       /* Заокруглені кути */
+    padding: 24px;             /* Внутрішні відступи */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* М'яка тінь для об'єму */
+}
