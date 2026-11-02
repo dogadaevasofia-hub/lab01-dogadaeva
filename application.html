@@ -1,158 +1,164 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заявка на участь у проєкті</title>
-    <meta name="description" content="Подайте заявку на участь у навчальному проєкті з алгоритмів. Заповніть форму та вкажіть ваш рівень і стек технологій.">
-    <meta name="author" content="Догадаєва Софія">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="canonical" href="https://dogadaevasofia-hub.github.io/lab01-dogadaeva/application.html">
-    
-    <meta property="og:title" content="Заявка на участь у проєкті">
-    <meta property="og:description" content="Подайте заявку на участь у навчальному проєкті з алгоритмів. Заповніть форму та вкажіть ваш рівень і стек технологій.">
-    <meta property="og:image" content="https://dogadaevasofia-hub.github.io/lab01-dogadaeva/img/og-preview.jpg">
-    <meta property="og:url" content="https://dogadaevasofia-hub.github.io/lab01-dogadaeva/application.html">
-    <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка на участь у проєкті</title>
+    <meta name="description" content="Подайте заявку на участь у навчальному проєкті з алгоритмів. Заповніть форму та вкажіть ваш рівень і стек технологій.">
+    <meta name="author" content="Догадаєва Софія">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://dogadaevasofia-hub.github.io/lab01-dogadaeva/application.html">
 
-    <script async src="https://plausible.io/js/pa-UtFpF1CNHz-1MWQV_pybi.js"></script>
-    <script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
+    
+    <meta property="og:title" content="Заявка на участь у проєкті">
+    <meta property="og:description" content="Подайте заявку на участь у навчальному проєкті з алгоритмів. Заповніть форму та вкажіть ваш рівень і стек технологій.">
+    <meta property="og:image" content="https://dogadaevasofia-hub.github.io/lab01-dogadaeva/img/og-preview.jpg">
+    <meta property="og:url" content="https://dogadaevasofia-hub.github.io/lab01-dogadaeva/application.html">
+    <meta property="og:type" content="website">
+
+    <script async src="https://plausible.io/js/pa-UtFpF1CNHz-1MWQV_pybi.js"></script>
+    <script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
 </script>
+
 </head>
-<body class="page" id="top">
-    <header class="page__header">
-        <a href="index.html" class="site-title">Операційні системи та віртуалізація — огляд напряму</a>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про напрям</a></li>
-                <li><a href="pages/resources.html">Ресурси</a></li>
-                <li><a href="comparison.html">Таблиці</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li class="menu__contacts"><a href="contacts.html">Контакти</a></li>
-                <li><a href="application.html" aria-current="page">Заявка на участь</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+    <header>
+        <a href="index.html" class="site-title">Операційні системи та віртуалізація — огляд напряму</a>
+        <nav>
+        <ul class="menu">
+            <li><a href="index.html" aria-current="page">Головна</a></li>
+            <li><a href="about.html">Про напрям</a></li>
+            <li><a href="pages/resources.html">Ресурси</a></li>
+            <li><a href="comparison.html">Таблиці</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li class="menu__contacts"><a href="contacts.html">Контакти</a></li>
+            <li><a href="application.html">Заявка на участь</a></li>
+        </ul>
+    </nav>
+    </header>
 
-    <main>
-         <h1>Заявка на участь у проєкті</h1>
+    <main>
+        <div class="container">
+            <h1>Заявка на участь у проєкті</h1>
 
-        <div class="container">
-            <form class="project-form card" action="https://httpbin.org/post" method="post">
+<form  class="project-form" action="https://httpbin.org/post" method="post">
 
-                <fieldset>
-                    <legend>Відомості про учасника</legend>
-                
-                    <div class="form-group">
-                        <label for="fullname">Прізвище та ім'я</label>
-                        <input type="text" id="fullname" name="fullname" minlength="5" maxlength="100" required>
-                    </div>
+    <fieldset>
+        <legend>Відомості про учасника</legend>
+    
+        <label for="fullname">Прізвище та ім'я</label>
+        <input type="text" id="fullname" name="fullname"
+            minlength="5" maxlength="100" required>
+        <br><br>
+        <label for="email">Електронна пошта</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
 
-                    <div class="form-group">
-                        <label for="email">Електронна пошта</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone"   pattern="\+380[0-9]{9}" title="Формат: +380671234567" placeholder="+380XXXXXXXXX" required>
+        <br><br>
 
-                    <div class="form-group">
-                        <label for="phone">Телефон</label>
-                        <input type="tel" id="phone" name="phone" pattern="\+380[0-9]{9}" title="Формат: +380671234567" placeholder="+380XXXXXXXXX" required>
-                    </div>
+        <label for="course">Курс навчання</label>
+        <input type="number" id="course" name="course" min="1" max="4" step="1" required>
+        <br><br>
 
-                    <div class="form-group">
-                        <label for="course">Курс навчання</label>
-                        <input type="number" id="course" name="course" min="1" max="4" step="1" required>
-                    </div>
-                </fieldset>
+    </fieldset>
 
-                <fieldset>
-                    <legend>Рівень підготовки</legend>
-                    <label class="radio-label">
-                        <input type="radio" name="level" value="begginner" required>
-                        Початківець
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="level" value="intermediate">
-                        Середній
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="level" value="advanced">
-                        Просунутий
-                    </label>
-                </fieldset>
+    <br>
 
-                <fieldset>
-                    <legend>Параметри проєкту</legend>
+    <fieldset>
+        <legend>Рівень підготовки</legend>
+        <label>
+            <input type="radio" name="level" value="begginner" required>
+            Початківець
+        </label><br>
+        <label>
+            <input type="radio" name="level" value="intermediate">
+            Середній
+        </label><br>
+        <label>
+            <input type="radio" name="level" value="advanced">
+            Просунутий
+        </label>
+    </fieldset>
 
-                    <div class="form-group">
-                        <label for="start_date">Дата початку участі</label>
-                        <input type="date" id="start_date" name="start_date" min="2026-09-15" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="stack">Технологічний стек</label>
-                        <select id="stack" name="stack" required>
-                            <optgroup label="Мови програмування">
-                                <option value="python">Python</option>
-                                <option value="cpp">C++</option>
-                            </optgroup>
-                            <optgroup label="Клієнтські технології">
-                                <option value="js">JavaScript</option>
-                            </optgroup>
-                        </select>
-                    </div>
 
-                    <p class="form-group-title">Напрями інтересу:</p>
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="interest" value="algorithms">
-                        Алгоритми та структури даних
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="interest" value="web">
-                        Веб-розробка
-                    </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="interest" value="ai">
-                        Штучний інтелект
-                    </label>
-                </fieldset>
 
-                <fieldset>
-                    <legend>Додаткові дані</legend>
+    <fieldset>
+        <legend>Параметри проєкту</legend>
 
-                    <div class="form-group">
-                        <label for="experience">Короткий опис досвіду</label>
-                        <textarea id="experience" name="experience" minlength="20" maxlength="500" required></textarea>
-                    </div>
+        <label for="start_date">Дата початку участі</label>
+        <input type="date" id="start_date" name="start_date" min="2026-09-15" required>
+        
+        <br><br>
 
-                    <div class="form-group">
-                        <label for="portfolio">Файл із портфоліо (необов'язково)</label>
-                        <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx">
-                    </div>
-                </fieldset>
+        <label for="stack">Технологічний стек</label>
+        <select id="stack" name="stack" required>
+            <optgroup label="Мови програмування">
+                <option value="python">Python</option>
+                <option value="cpp">C++</option>
+            </optgroup>
+            <optgroup label="Клієнтські технології">
+                <option value="js">JavaScript</option>
+            </optgroup>
+        </select>
+        <br><br>
 
-                <div class="form-actions">
-                    <button type="submit" class="btn btn--primary">Надіслати заявку</button>
-                    <button type="reset" class="btn">Очистити форму</button>
-                    <button type="button" id="preview-btn" class="btn">Попередній перегляд</button>
-                </div>
-            </form>
-        </div>
-    </main>
+        <p>Напрями інтересу:</p>
+        <label>
+            <input type="checkbox" name="interest" value="algorithms">
+            Алгоритми та структури даних
+        </label><br>
+        <label>
+            <input type="checkbox" name="interest" value="web">
+            Веб-розробка
+        </label><br>
+        <label>
+            <input type="checkbox" name="interest" value="ai">
+            Штучний інтелект
+        </label>
+        <br><br>
+    </fieldset>
 
-    <footer class="page__footer">
-        <address>
-            Догадаєва Софія, група КН 21<br>
-            <a href="mailto:contact@brandname.com">contact@brandname.com</a><br>
-            <a href="tel:+380674821953">+380674821953</a>
-        </address>
-        <p>&copy; 2026 Догадаєва Софія</p>
-        <p><a href="privacy.html">Політика конфіденційності</a></p>
-    </footer>
+    <br>
 
-    <a href="#top" class="back-to-top">Нагору</a>
+    <fieldset>
+        <legend>Додаткові дані</legend>
+
+        <label for="experience">Короткий опис досвіду</label><br>
+        <textarea id="experience" name="experience" minlength="20" maxlength="500" required></textarea>
+        <br><br>
+
+        <label for="portfolio">Файл із портфоліо (необов'язково)</label>
+        <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx">
+        <br><br>
+    </fieldset>
+
+    <br>
+
+    <button type="submit" class="btn-inline">Надіслати заявку</button>
+    <button type="reset" class="btn-inline">Очистити форму</button>
+    <button type="button" id="preview-btn" class="btn-inline">Попередній перегляд</button>
+</form>
+</div>
+</main>
+
+<br>
+
+<footer>
+    <address>
+            Догадаєва Софія, група КН 21<br>
+            <a href="mailto:contact@brandname.com">contact@brandname.com</a><br>
+            <a href="tel:+380674821953">+380674821953</a>
+    </address>
+    <p>&copy; 2026 Догадаєва Софія</p>
+    <p><a href="privacy.html">Політика конфіденційності</a></p>
+</footer>
+
+<a href="#top" class="back-to-top">Нагору</a>
+
 </body>
-</html>
+</html> що тут потрібно змінити 
